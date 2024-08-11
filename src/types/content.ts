@@ -149,6 +149,11 @@ export declare interface BaseModelParams {
    * Note: only text should be used in parts of {@link Content}
    */
   systemInstruction?: string | Content;
+  tool_config?: {
+    function_calling_config?: {
+      mode?: string;
+    }
+  };
 }
 
 /**

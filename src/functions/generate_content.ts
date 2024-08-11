@@ -73,6 +73,7 @@ export async function generateContent(
     generationConfig: request.generationConfig ?? generationConfig,
     safetySettings: request.safetySettings ?? safetySettings,
     tools: request.tools ?? tools,
+    tool_config: request.tool_config
   };
   const response: Response | undefined = await postRequest({
     region: location,
